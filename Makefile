@@ -1,3 +1,4 @@
+#动态库编译文件
 CFLAGS = -Wall -g 
 
 all: clean test libtestso.o
