@@ -37,6 +37,11 @@ For example, to build the test app:
 gcc cJSON.c test.c -o test -lm
 ./test
 
+or 
+
+make //生成so文件
+echo $PWD >> /etc/ld.so.conf && ldconfig //当前运行路径添加到动态库配置文件 
+./test
 
 As a library, cJSON exists to take away as much legwork as it can, but not get in your way.
 As a point of pragmatism (i.e. ignoring the truth), I'm going to say that you can use it
